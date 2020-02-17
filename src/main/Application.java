@@ -15,26 +15,26 @@ public class Application {
 		System.out.println(factory.getFish("Sea fish", "Shark", 100, "Sea"));
 		System.out.println();
 		
-		FishInterface f = factory.getFish("River fish", "Amur", 6, "River");
-		System.out.println(f);
-
-//		FishInterface factoryFish = factory.cloneFish(f);
-//		System.out.println(factoryFish);
-		
-		FishInterface factoryFish = (FishInterface) f.clone();
+		FishInterface factoryFish = factory.getFish("River fish", "Amur", 6, "River");
 		System.out.println(factoryFish);
+		
+		FishInterface cloneFish = factory.cloneFish(factoryFish);
+		System.out.println(cloneFish);
+		
+//		FishInterface cloneFish = (FishInterface) factoryFish.clone();
+//		System.out.println(cloneFish);
 		System.out.println();
 		
 		factoryFish.setType("Ocuni");
 				
-		System.out.println(f);
 		System.out.println(factoryFish);
+		System.out.println(cloneFish);
 		System.out.println();
 		
-		f.setType("Lesci");
+		cloneFish.setType("Lesci");
 		
-		System.out.println(f);
 		System.out.println(factoryFish);
+		System.out.println(cloneFish);
 		System.out.println();
 	}
 }

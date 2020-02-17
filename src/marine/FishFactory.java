@@ -15,14 +15,13 @@ public class FishFactory {
 		}
 		return null;
 	}
-
-//	public FishInterface cloneFish(FishInterface original) {
-//		FishInterface fish = new Fish();
-//		fish.setType(original.getType());
-//		fish.setWeight(original.getWeight());
-//		fish.setEnviroment(original.getEnviroment());
-//		return fish;
-//	}
 	
-	
+	public FishInterface cloneFish(FishInterface original) {
+		
+		FishInterface fish = new Fish();
+		fish.setType(original.getType());
+		fish.setWeight(original.getWeight());
+		fish.setEnviroment(original.getEnviroment());
+		return fish;
+	}
 }

@@ -51,8 +51,8 @@ public class Fish implements FishInterface {
 		return enviroment;
 	}
 	
-	@Override
-	public Object clone() throws CloneNotSupportedException {
-		return super.clone();
-	}
+//	@Override
+//	public Object clone() throws CloneNotSupportedException {
+//		return super.clone();
+//	}
 }

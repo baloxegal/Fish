@@ -1,8 +1,8 @@
 package marine;
 
-public interface FishInterface extends Cloneable{
+public interface FishInterface /*extends Cloneable*/{
 
-	Object clone() throws CloneNotSupportedException;
+	//Object clone() throws CloneNotSupportedException;
 	void setType(String type);
 	String getType();
 	void setWeight(Integer weight);
